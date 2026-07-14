@@ -1,5 +1,13 @@
 # 🚀 DevOps System Health Dashboard
+![Python](https://img.shields.io/badge/Python-3.12-blue)
 
+![Flask](https://img.shields.io/badge/Flask-3.x-black)
+
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-success)
+
+![License](https://img.shields.io/badge/License-MIT-green)
 A Dockerized Flask application demonstrating modern DevOps practices including Docker, Docker Compose, GitHub Actions CI, automated testing with Pytest, environment-based configuration, and Gunicorn production deployment.
 
 ---
