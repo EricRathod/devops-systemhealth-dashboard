@@ -232,23 +232,22 @@ pytest -v
 
 # 📸 Project Screenshots
 
-### Dashboard
+## Dashboard
 
-> *(Add dashboard screenshot here)*
-
----
-
-### GitHub Actions CI
-
-> *(Add GitHub Actions screenshot here)*
+![Dashboard](docs/screenshots/dashboard.png)
 
 ---
 
-### Docker Compose
+## GitHub Actions CI Pipeline
 
-> *(Add Docker Compose screenshot here)*
+![GitHub Actions](docs/screenshots/github-actions.png)
 
 ---
+
+## Docker Compose
+
+![Docker Compose](docs/screenshots/docker-compose.png)
+
 
 # 🚀 Future Improvements
 
