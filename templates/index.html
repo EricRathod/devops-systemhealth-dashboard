@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>System Health Dashboard</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+    <main class="dashboard">
+        <header>
+            <p class="eyebrow">DEVOPS MONITORING PROJECT</p>
+            <h1>{{ system_information.application }}</h1>
+            <p class="subtitle">
+                Application and environment health information
+            </p>
+        </header>
+
+        <section class="status-card">
+            <div>
+                <p class="label">Current Status</p>
+                <h2>{{ system_information.status }}</h2>
+            </div>
+
+            <span class="status-badge">Healthy</span>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <p class="label">Version</p>
+                <h3>{{ system_information.version }}</h3>
+            </article>
+
+            <article class="card">
+                <p class="label">Environment</p>
+                <h3>{{ system_information.environment }}</h3>
+            </article>
+
+            <article class="card">
+                <p class="label">Python Version</p>
+                <h3>{{ system_information.python_version }}</h3>
+            </article>
+
+            <article class="card">
+                <p class="label">Operating System</p>
+                <h3>{{ system_information.operating_system }}</h3>
+            </article>
+        </section>
+
+        <section class="endpoint-card">
+            <h2>Available Endpoints</h2>
+
+            <div class="endpoint">
+                <code>GET /health</code>
+                <span>Application health check</span>
+            </div>
+
+            <div class="endpoint">
+                <code>GET /api/info</code>
+                <span>Application information</span>
+            </div>
+        </section>
+
+        <footer>
+            Last checked: {{ system_information.checked_at }}
+        </footer>
+    </main>
+</body>
+</html>
