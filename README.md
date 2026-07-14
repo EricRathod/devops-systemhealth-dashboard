@@ -326,7 +326,7 @@ Master of Artificial Intelligence – Design and Development
 Seneca Polytechnic
 
 - **GitHub:** https://github.com/EricRathod
-- **LinkedIn:** *(Add your LinkedIn profile URL)*
+- **LinkedIn:** www.linkedin.com/in/eric-rathod-aa335a310
 
 ---
 
