@@ -1,4 +1,5 @@
 # 🚀 DevOps System Health Dashboard
+
 ![CI](https://github.com/EricRathod/devops-systemhealth-dashboard/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.x-black)
@@ -6,48 +7,43 @@
 ![Render](https://img.shields.io/badge/Render-Live-46E3B7)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A production-style Flask application demonstrating Docker, Docker Compose, GitHub Actions CI, automated testing with Pytest, environment-based configuration, Gunicorn, and live deployment on Render.
+A Dockerized Flask web application that demonstrates modern DevOps practices including containerization, automated testing, Continuous Integration (CI), and cloud deployment.
 
 ---
-## 🌐 Live Demo
 
-🔗 **Live Application:**  
-https://devops-systemhealth-dashboard.onrender.com/
-> **Note:** This application is hosted on Render's free tier. The first request after a period of inactivity may take 30–60 seconds while the service starts.
+# 🌐 Live Demo
 
+### 🔗 https://devops-systemhealth-dashboard.onrender.com/
 
-## 📖 Overview
+> **Note:** This application is hosted on Render's free tier. The first request after inactivity may take **30–60 seconds** while the service starts.
 
-The **DevOps System Health Dashboard** is a lightweight monitoring application that provides application health and environment information through a responsive web dashboard and REST APIs.
+---
 
-This project demonstrates fundamental DevOps concepts such as:
+# 📖 Overview
 
-- Containerization with Docker
-- Multi-service management using Docker Compose
-- Continuous Integration using GitHub Actions
-- Automated testing with Pytest
-- Production deployment using Gunicorn
-- Environment-based configuration
+The **DevOps System Health Dashboard** is a lightweight monitoring application that displays system health and application information through a clean web dashboard and REST APIs.
+
+The project was built to demonstrate a complete DevOps workflow, from local development to automated testing, containerization, continuous integration, and cloud deployment.
 
 ---
 
 # ✨ Features
 
-- ✅ Interactive System Health Dashboard
-- ✅ REST API Endpoints
-- ✅ Health Check Endpoint
-- ✅ Application Information API
-- ✅ Environment Variable Configuration
-- ✅ Docker Containerization
-- ✅ Docker Compose
-- ✅ GitHub Actions CI Pipeline
-- ✅ Automated Testing with Pytest
-- ✅ Gunicorn Production Server
-- ✅ Responsive Web Interface
+- Interactive System Health Dashboard
+- REST API Endpoints
+- Health Check Endpoint
+- Application Information Endpoint
+- Environment-Based Configuration
+- Docker Containerization
+- Docker Compose Support
+- Automated Testing with Pytest
+- GitHub Actions CI Pipeline
+- Gunicorn Production Server
+- Live Deployment on Render
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
 | Category | Technology |
 |-----------|------------|
@@ -57,6 +53,7 @@ This project demonstrates fundamental DevOps concepts such as:
 | Containerization | Docker |
 | Container Management | Docker Compose |
 | CI/CD | GitHub Actions |
+| Cloud Hosting | Render |
 | Testing | Pytest |
 | Frontend | HTML, CSS |
 | Version Control | Git & GitHub |
@@ -91,8 +88,8 @@ devops-systemhealth-dashboard/
 ├── .dockerignore
 ├── .gitignore
 ├── app.py
-├── compose.yml
 ├── config.py
+├── compose.yml
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
@@ -101,57 +98,57 @@ devops-systemhealth-dashboard/
 
 ---
 
-# 🏗 Runtime Architecture
+# 🏗️ Runtime Architecture
 
 ```text
-               Browser
-                   │
-                   ▼
-             Port 5000
-                   │
-                   ▼
-          Docker Compose
-                   │
-                   ▼
+              Browser
+                  │
+                  ▼
+       Render Cloud Platform
+                  │
+                  ▼
          Docker Container
-                   │
-                   ▼
-              Gunicorn
-                   │
-                   ▼
+                  │
+                  ▼
+             Gunicorn
+                  │
+                  ▼
           Flask Application
 ```
 
 ---
 
-# 🔄 CI Pipeline
+# 🔄 CI/CD Workflow
 
 ```text
-Developer Push
-       │
-       ▼
+Developer
+    │
+git push
+    │
+    ▼
 GitHub Repository
-       │
-       ▼
+    │
+    ▼
 GitHub Actions
-       │
-       ▼
-Install Dependencies
-       │
-       ▼
-Run Pytest
-       │
-       ▼
-Build Docker Image
+    │
+    ├── Install Dependencies
+    ├── Run Pytest
+    └── Build Docker Image
+    │
+    ▼
+Render Auto Deployment
+    │
+    ▼
+Live Application
 ```
 
 ---
 
-# 🌐 API Endpoints
+# 🌐 REST API
 
 ## Health Check
 
-```
+```http
 GET /health
 ```
 
@@ -159,7 +156,7 @@ Example Response
 
 ```json
 {
-    "status": "healthy"
+  "status": "healthy"
 }
 ```
 
@@ -167,7 +164,7 @@ Example Response
 
 ## Application Information
 
-```
+```http
 GET /api/info
 ```
 
@@ -175,19 +172,19 @@ Example Response
 
 ```json
 {
-    "application": "DevOps System Health Dashboard",
-    "version": "1.0.0",
-    "environment": "production",
-    "python_version": "3.12.x",
-    "operating_system": "Linux"
+  "application": "DevOps System Health Dashboard",
+  "version": "1.0.0",
+  "environment": "production",
+  "python_version": "3.12.x",
+  "operating_system": "Linux"
 }
 ```
 
 ---
 
-# 🚀 Running the Project
+# 🚀 Running Locally
 
-## Clone Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/EricRathod/devops-systemhealth-dashboard.git
@@ -204,7 +201,7 @@ pip install -r requirements.txt
 
 ---
 
-## Run Locally
+## Run the Application
 
 ```bash
 python app.py
@@ -220,13 +217,13 @@ http://localhost:5000
 
 # 🐳 Docker
 
-## Build Image
+### Build Image
 
 ```bash
 docker build -t devops-dashboard .
 ```
 
-## Run Container
+### Run Container
 
 ```bash
 docker run -p 5000:5000 devops-dashboard
@@ -236,19 +233,19 @@ docker run -p 5000:5000 devops-dashboard
 
 # 🐳 Docker Compose
 
-## Build and Start
+### Start
 
 ```bash
 docker compose up --build
 ```
 
-## Start in Background
+### Run in Background
 
 ```bash
 docker compose up -d
 ```
 
-## Stop
+### Stop
 
 ```bash
 docker compose down
@@ -264,16 +261,22 @@ pytest -v
 
 ---
 
-# ⚙ Continuous Integration
+# ☁️ Deployment
 
-The GitHub Actions workflow automatically:
+This application is deployed on **Render** using Docker.
 
-- Checks out the repository
-- Installs Python dependencies
-- Executes automated tests with Pytest
-- Builds the Docker image
+Deployment workflow:
 
-The workflow runs automatically whenever code is pushed to the **main** branch.
+1. Push changes to the **main** branch.
+2. GitHub Actions automatically:
+   - Installs dependencies
+   - Runs automated tests
+   - Builds the Docker image
+3. Render automatically deploys the latest version.
+
+Live URL:
+
+**https://devops-systemhealth-dashboard.onrender.com/**
 
 ---
 
@@ -299,20 +302,19 @@ The workflow runs automatically whenever code is pushed to the **main** branch.
 
 # 🚀 Future Improvements
 
-- AWS EC2 Deployment
-- Kubernetes Deployment
+- Deploy on AWS EC2
+- Kubernetes (K8s)
 - Terraform Infrastructure as Code
-- Prometheus Monitoring
-- Grafana Dashboard
+- Prometheus & Grafana Monitoring
 - Nginx Reverse Proxy
-- HTTPS with SSL
-- Centralized Logging
+- Custom Domain with HTTPS
+- Centralized Logging (ELK Stack)
 
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -320,14 +322,14 @@ This project is licensed under the MIT License.
 
 **Eric Rathod**
 
-Master of Artificial Intelligence – Design and Development
-
+Master of Artificial Intelligence – Design and Development  
 Seneca Polytechnic
 
-GitHub: https://github.com/EricRathod
-
-LinkedIn: *(Add your LinkedIn profile URL here)*
+- **GitHub:** https://github.com/EricRathod
+- **LinkedIn:** *(Add your LinkedIn profile URL)*
 
 ---
 
-## ⭐ If you found this project useful, please consider giving it a star.
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
