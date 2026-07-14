@@ -8,6 +8,9 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-success)
 
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+![Build Status](https://github.com/EricRathod/devops-systemhealth-dashboard/actions/workflows/ci.yml/badge.svg)
+
 A Dockerized Flask application demonstrating modern DevOps practices including Docker, Docker Compose, GitHub Actions CI, automated testing with Pytest, environment-based configuration, and Gunicorn production deployment.
 
 ---
