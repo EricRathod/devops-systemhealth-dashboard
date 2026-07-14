@@ -1,17 +1,12 @@
 # 🚀 DevOps System Health Dashboard
+![CI](https://github.com/EricRathod/devops-systemhealth-dashboard/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
-
 ![Flask](https://img.shields.io/badge/Flask-3.x-black)
-
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
-
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-success)
-
+![Render](https://img.shields.io/badge/Render-Live-46E3B7)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-![Build Status](https://github.com/EricRathod/devops-systemhealth-dashboard/actions/workflows/ci.yml/badge.svg)
-
-A Dockerized Flask application demonstrating modern DevOps practices including Docker, Docker Compose, GitHub Actions CI, automated testing with Pytest, environment-based configuration, and Gunicorn production deployment.
+A production-style Flask application demonstrating Docker, Docker Compose, GitHub Actions CI, automated testing with Pytest, environment-based configuration, Gunicorn, and live deployment on Render.
 
 ---
 ## 🌐 Live Demo
