@@ -18,7 +18,6 @@ A Dockerized Flask application demonstrating modern DevOps practices including D
 
 🔗 **Live Application:**  
 https://devops-systemhealth-dashboard.onrender.com/
-
 > **Note:** This application is hosted on Render's free tier. The first request after a period of inactivity may take 30–60 seconds while the service starts.
 
 
